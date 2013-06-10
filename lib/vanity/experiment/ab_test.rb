@@ -177,12 +177,10 @@ module Vanity
 
       def test_percentage(value)
         if (value < 100 && value > 0)
-          warn "Test percentage legal"
           @test_percentage = value
           @is_test_percentage_set = true
-        else
-          warn "Illegal test percentage given so will be set default value of 100%"
-          @is_test_percentage_set = false
+       # else
+        #  @is_test_percentage_set = false
         end
 
         class << self
