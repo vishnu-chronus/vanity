@@ -117,6 +117,9 @@ module Vanity
           "A/B Test" 
         end
 
+        def test_percentage
+          self.test_percentage
+        end
       end
 
       def initialize(*args)
