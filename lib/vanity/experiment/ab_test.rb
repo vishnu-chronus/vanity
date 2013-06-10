@@ -118,7 +118,7 @@ module Vanity
         end
 
         def test_percentage
-          self.test_percentage
+          @test_percentage
         end
       end
 
