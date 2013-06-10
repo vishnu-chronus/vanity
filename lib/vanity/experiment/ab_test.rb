@@ -591,7 +591,7 @@ module Vanity
         #setting default value of test percentage as 100 if no other value is set
         if !@is_test_percentage_set
           test_percentage(100)
-          warn "No Test percentage specified; choosing 100 as test percentage"
+          warn "No or invalid test percentage specified; choosing 100 as test percentage"
         end
 
         super

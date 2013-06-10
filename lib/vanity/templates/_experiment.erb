@@ -6,6 +6,7 @@
 <div class="inner <%= status %>">
 <h3>
   <%=vanity_h experiment.name %><span class="type">(<%= experiment.class.friendly_name %>)</span>
+  <%= experiment.test_percentage %> percent of users tested
   <% if experiment.type == 'ab_test' && experiment.active? && experiment.playground.collecting? %>
     <span class='enabled-links'>
       <% action = experiment.enabled? ? 'Disable' : 'Enable' %>
